@@ -16,7 +16,7 @@ import { PageViews } from "../common/PageViews";
 import { Reveal } from "../common/Reveal";
 
 const LOGO = "/assets/logo.png";
-const AVATAR = "/assets/mohan.jpeg";
+const AVATAR = "/assets/profile2.webp";
 
 export const HeroAvatar = () => {
   const [image, setImage] = useState(LOGO);
