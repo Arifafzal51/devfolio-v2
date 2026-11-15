@@ -5,8 +5,8 @@ import { useEffect } from "react";
 const TRIGGERS = new Set([
   "chatgpt.com",
   "claude.ai",
-  "x.com",
-  "twitter.com",
+  "grok.com",
+  "x.ai",
   "gemini.google.com",
   "perplexity.ai",
 ]);

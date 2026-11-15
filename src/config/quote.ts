@@ -71,4 +71,12 @@ export const quotes: QuoteType[] = [
     quote: "A man who is master of patience is master of everything else.",
     author: "George Savile",
   },
+  {
+    quote: "First solve the problem, then write code.",
+    author: "John Johnson"
+  },
+  {
+    quote: "The best way to predict the future is to create it.",
+    author: "Alan kay"
+  }
 ];
