@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 
 import { Container } from "@/components/common/Container";
+import InsightsCard from "@/components/common/InsightCard";
 import { Reveal } from "@/components/common/Reveal";
 import { Blog } from "@/components/home/Blog";
 import { Experience } from "@/components/home/Experience";
@@ -46,6 +47,8 @@ const Page = async () => {
       <Suspense fallback={<div>Loading blog...</div>}>
         <Blog />
       </Suspense>
+
+      <InsightsCard />
 
       <Testimonial />
 

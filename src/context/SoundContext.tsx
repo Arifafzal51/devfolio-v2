@@ -2,9 +2,14 @@
 
 import { createContext, useContext, useState } from "react";
 
-const SoundContext = createContext({
+type SoundContextType = {
+  soundEnabled: boolean;
+  setSoundEnabled: (value: boolean) => void;
+};
+
+const SoundContext = createContext<SoundContextType>({
   soundEnabled: true,
-  setSoundEnabled: (_value: boolean) => {},
+  setSoundEnabled: () => {},
 });
 
 export const SoundProvider = ({ children }: { children: React.ReactNode }) => {

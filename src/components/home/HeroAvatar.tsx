@@ -12,7 +12,6 @@ import { useSound } from "@/context/SoundContext";
 import { CircleZap } from "@/svgs/essentials/CircleZap";
 
 import { AvailableBadge } from "../common/AvailableBadge";
-import { PageViews } from "../common/PageViews";
 import { Reveal } from "../common/Reveal";
 
 const LOGO = "/assets/logo.png";
@@ -255,7 +254,6 @@ export const HeroAvatar = () => {
       {/* Desktop availability badge */}
       <Reveal delay={0.1}>
         <div className="itms-center absolute right-0 hidden gap-5 md:flex">
-          <PageViews />
           <AvailableBadge />
         </div>
       </Reveal>

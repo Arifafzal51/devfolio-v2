@@ -81,8 +81,10 @@ const WakaTimeData = () => {
     };
   }, []);
 
+  const status = data?.status;
+
   useEffect(() => {
-    if (!data || data.status !== "online") return;
+    if (status !== "online") return;
 
     const timerId = window.setInterval(() => {
       const elapsed = Math.floor((Date.now() - baseTimeRef.current) / 1000);
@@ -91,7 +93,7 @@ const WakaTimeData = () => {
     }, TIMER_INTERVAL);
 
     return () => window.clearInterval(timerId);
-  }, [data?.status]);
+  }, [status]);
 
   if (!data) {
     return (

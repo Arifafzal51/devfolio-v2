@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
@@ -44,10 +44,10 @@ export function ContactForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
+    control,
     register,
     handleSubmit,
     reset,
-    watch,
     formState: { errors },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -59,7 +59,7 @@ export function ContactForm({
     },
   });
 
-  const message = watch("message");
+  const message = useWatch({ control, name: "message" });
 
   const fieldClassName =
     "h-12 rounded-xl border-border/80 bg-background/60 px-4 shadow-sm transition-all duration-200 placeholder:text-muted-foreground/65 focus-visible:border-foreground/40 focus-visible:ring-2 focus-visible:ring-foreground/10";
@@ -235,11 +235,11 @@ export function ContactForm({
             )}
           </div>
 
-          <div className="flex  gap-4 pt-2  items-center">
+          <div className="flex items-center gap-4 pt-2">
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="group bg-foreground flex-1 text-background h-12 w-full rounded-xl px-5 shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg disabled:translate-y-0 sm:flex-1 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
+              className="group bg-foreground text-background h-12 w-full flex-1 rounded-xl px-5 shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg disabled:translate-y-0 sm:flex-1 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
             >
               {isSubmitting ? (
                 <>

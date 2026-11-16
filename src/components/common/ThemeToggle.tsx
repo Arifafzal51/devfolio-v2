@@ -143,7 +143,7 @@ export const ThemeToggleButton = ({
     return () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, [toggleTheme]);
+  }, [changeThemeWithoutAnimation]);
 
   const mounted = useSyncExternalStore(
     () => () => {},
