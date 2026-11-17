@@ -11,7 +11,7 @@ import { caveat } from "@/config/font";
 import { useSound } from "@/context/SoundContext";
 import { CircleZap } from "@/svgs/essentials/CircleZap";
 
-import { AvailableBadge } from "../common/AvailableBadge";
+import { AvailableBadge } from "./AvailableBadge";
 import { Reveal } from "../common/Reveal";
 
 const LOGO = "/assets/logo.png";

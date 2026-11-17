@@ -2,7 +2,7 @@
 
 A personal developer portfolio built with Next.js to showcase my projects, technical skills, professional experience, and interests.
 
-**Live Website:** https://monxdev.vercel.app
+**Live Website:** https://mohanx.in
 
 ## Features
 

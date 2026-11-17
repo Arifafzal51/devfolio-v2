@@ -14,7 +14,7 @@ import {
   vsCodeExtensions,
   webExtensions,
 } from "@/lib/gears";
-import { generateContentMetadata } from "@/lib/seo";
+import { generateContentMetadata } from "@/lib/stats/seo";
 import { Monitor } from "@/svgs/devices/Monitor";
 
 export function generateMetadata(): Metadata {

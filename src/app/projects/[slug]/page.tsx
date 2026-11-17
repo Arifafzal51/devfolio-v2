@@ -14,7 +14,7 @@ import {
   getProjects,
   getRelatedProjects,
 } from "@/lib/projects";
-import { generateContentMetadata } from "@/lib/seo";
+import { generateContentMetadata } from "@/lib/stats/seo";
 import { ArrowUpRight } from "@/svgs/essentials/ArrowUpRight";
 
 type Props = {

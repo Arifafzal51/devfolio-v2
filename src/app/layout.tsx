@@ -21,9 +21,9 @@ import { AppProviders } from "@/providers/AppProviders";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://monxdev.vercel.app"),
+  metadataBase: new URL(process.env.SITE_URL || "https://mohanx.in"),
   alternates: {
-    canonical: "https://monxdev.vercel.app",
+    canonical: "https://mohanx.in",
   },
   title: {
     default: "Mohan S P - Full Stack Web Developer",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://monxdev.vercel.app/",
+    url: "https://mohanx.in/",
     title: "Mohan S P - Full Stack Web Developer",
     description:
       "I build modern websites and digital products focused on design and performance.",
     siteName: "Mohan S P",
     images: [
       {
-        url: "https://monxdev.vercel.app/meta/og-img.png",
+        url: "https://mohanx.in/meta/og-img.png",
         width: 1200,
         height: 630,
         alt: "Mohan S P Portfolio Preview",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Mohan S P - Full Stack Web Developer",
     description:
       "I build modern websites and digital products focused on design and performance.",
-    images: ["https://monxdev.vercel.app/meta/og-img.png"],
+    images: ["https://mohanx.in/meta/og-img.png"],
     creator: "@_igmoni",
   },
 

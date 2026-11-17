@@ -7,7 +7,7 @@ import { Reveal } from "@/components/common/Reveal";
 import { SubHeading } from "@/components/common/SubHeading";
 import { Separator } from "@/components/ui/separator";
 import { books } from "@/lib/personal";
-import { generateContentMetadata } from "@/lib/seo";
+import { generateContentMetadata } from "@/lib/stats/seo";
 
 export function generateMetadata(): Metadata {
   return generateContentMetadata({

@@ -14,7 +14,7 @@ import { Heading } from "@/components/common/Heading";
 import { SubHeading } from "@/components/common/SubHeading";
 import { Separator } from "@/components/ui/separator";
 import { getBlogBySlug, getBlogs } from "@/lib/blog";
-import { generateContentMetadata } from "@/lib/seo";
+import { generateContentMetadata } from "@/lib/stats/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;

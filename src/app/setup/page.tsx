@@ -5,8 +5,8 @@ import { Reveal } from "@/components/common/Reveal";
 import { EditorHero } from "@/components/setup/EditorHero";
 import { SetupGuide } from "@/components/setup/SetupGuide";
 import { Separator } from "@/components/ui/separator";
-import { generateContentMetadata } from "@/lib/seo";
 import { setupSections } from "@/lib/setup";
+import { generateContentMetadata } from "@/lib/stats/seo";
 
 export function generateMetadata(): Metadata {
   return generateContentMetadata({

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = (process.env.SITE_URL || "https://monxdev.vercel.app").replace(
+const SITE_URL = (process.env.SITE_URL || "https://mohanx.in").replace(
   /\/+$/,
   ""
 );

@@ -1,4 +1,4 @@
-const SITE_URL = process.env.SITE_URL || "http://monxdev.vercel.app";
+const SITE_URL = process.env.SITE_URL || "http://mohanx.in";
 
 const posts = [
   {

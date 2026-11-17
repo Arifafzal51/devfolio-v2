@@ -14,11 +14,11 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
+import { cn } from "@/lib/utils";
 import {
   contactFormSchema,
   type ContactFormValues,
-} from "@/lib/contact-schema";
-import { cn } from "@/lib/utils";
+} from "@/validations/contact-schema";
 
 import { Button } from "../ui/button";
 import {

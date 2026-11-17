@@ -1,6 +1,6 @@
 import { heroConfig as item } from "./hero";
 
-const siteUrl = (process.env.SITE_URL || "https://monxdev.vercel.app").replace(
+const siteUrl = (process.env.SITE_URL || "https://mohanx.in").replace(
   /\/+$/,
   ""
 );

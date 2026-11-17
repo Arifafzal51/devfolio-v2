@@ -7,7 +7,7 @@ import { SubHeading } from "@/components/common/SubHeading";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { Separator } from "@/components/ui/separator";
 import { getProjects } from "@/lib/projects";
-import { generateContentMetadata } from "@/lib/seo";
+import { generateContentMetadata } from "@/lib/stats/seo";
 
 export function generateMetadata(): Metadata {
   return generateContentMetadata({

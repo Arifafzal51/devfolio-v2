@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 
-import { formatDuration, parseWakaTime } from "@/lib/wakatimeStats";
+import { formatDuration, parseWakaTime } from "@/lib/stats/wakatimeStats";
 import { type WakaTimeApiResponse, type WakaTimeData } from "@/types/wakatime";
 
 const POLL_INTERVAL = 30_000; // Refresh WakaTime every 30 seconds.

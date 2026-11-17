@@ -7,6 +7,6 @@ export default function robots() {
         disallow: [],
       },
     ],
-    sitemap: "https://monxdev.vercel.app/sitemap.xml",
+    sitemap: "https://mohanx.in/sitemap.xml",
   };
 }
