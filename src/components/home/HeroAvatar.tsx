@@ -164,7 +164,21 @@ export const HeroAvatar = () => {
     <div className="relative">
       {/* Hero GIF */}
       <Reveal>
-        <HeroVideo />
+        <div className="relative z-0 mx-auto my-5 h-42 w-full max-w-3xl overflow-hidden rounded-2xl shadow-xl sm:h-72 md:h-80">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            width={768}
+            height={320}
+            className="h-full w-full object-cover"
+          >
+            <source src="/assets/sukuna.webm" type="video/webm" />
+            <source src="/assets/sukuna.mp4" type="video/mp4" />
+          </video>
+        </div>
       </Reveal>
 
       {/* Mobile: avatar overlaps GIF, buttons on either side */}
