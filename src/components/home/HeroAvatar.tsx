@@ -11,7 +11,6 @@ import { caveat } from "@/config/font";
 import { useSound } from "@/context/SoundContext";
 import { CircleZap } from "@/svgs/essentials/CircleZap";
 
-import { HeroVideo } from "../common/HeroVideo";
 import { Reveal } from "../common/Reveal";
 import { AvailableBadge } from "./AvailableBadge";
 
