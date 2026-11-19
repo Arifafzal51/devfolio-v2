@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { Resend } from "resend";
 
-import { contactFormSchema } from "@/lib/contact-schema";
+import { contactFormSchema } from "@/validations/contact-schema";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

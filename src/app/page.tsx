@@ -1,12 +1,12 @@
 import { Suspense } from "react";
 
 import { Container } from "@/components/common/Container";
-import InsightsCard from "@/components/common/InsightCard";
 import { Reveal } from "@/components/common/Reveal";
 import { Blog } from "@/components/home/Blog";
 import { Experience } from "@/components/home/Experience";
 import { Github } from "@/components/home/Github";
 import { Hero } from "@/components/home/Hero";
+import InsightsCard from "@/components/home/InsightCard";
 import { OpenWork } from "@/components/home/OpenWork";
 import { Personal } from "@/components/home/Personal";
 import { Projects } from "@/components/home/Projects";
@@ -14,6 +14,7 @@ import { Setup } from "@/components/home/Setup";
 import { SkillsCarousel } from "@/components/home/SkillsCarousel";
 import { Spotify } from "@/components/home/Spotify";
 import { Testimonial } from "@/components/home/Testimonial";
+import { SponsorsCard } from "@/components/sponsors/SponsorsCard";
 
 const Page = async () => {
   return (
@@ -44,11 +45,15 @@ const Page = async () => {
         <Projects />
       </Suspense>
 
-      <Suspense fallback={<div>Loading blog...</div>}>
-        <Blog />
+      <Suspense fallback={null}>
+        <SponsorsCard />
       </Suspense>
 
       <InsightsCard />
+
+      <Suspense fallback={<div>Loading blog...</div>}>
+        <Blog />
+      </Suspense>
 
       <Testimonial />
 
