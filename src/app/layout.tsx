@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Mohan S P",
     images: [
       {
-        url: "https://mohanx.in/meta/og-img.png",
+        url: "https://mohanx.in/meta/og-img.webp",
         width: 1200,
         height: 630,
         alt: "Mohan S P Portfolio Preview",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Mohan S P - Full Stack Web Developer",
     description:
       "I build modern websites and digital products focused on design and performance.",
-    images: ["https://mohanx.in/meta/og-img.png"],
+    images: ["https://mohanx.in/meta/og-img.webp"],
     creator: "@_igmoni",
   },
 
@@ -73,6 +73,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressContentEditableWarning
       suppressHydrationWarning
     >
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/sukuna-poster.webp"
+          fetchPriority="high"
+        />
+      </head>
       <body className="flex min-h-full flex-col">
         <Suspense fallback={null}>
           <AppProviders>

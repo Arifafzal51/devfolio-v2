@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
     title: "Contact - Let's Work Together",
     description:
       "Have a project in mind, an idea to share, or an opportunity to discuss? Get in touch with me.",
-    image: "/meta/contact.png",
+    image: "/meta/contact.webp",
     path: "/contact",
     type: "website",
   });

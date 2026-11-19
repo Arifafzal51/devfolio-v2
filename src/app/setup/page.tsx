@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
     title: "Setup Guide - VS Code Configuration",
     description:
       "Explore my development environment, editor configuration, tools, and setup guide.",
-    image: "/meta/setup.png",
+    image: "/meta/setup.webp",
     path: "/setup",
     type: "website",
   });

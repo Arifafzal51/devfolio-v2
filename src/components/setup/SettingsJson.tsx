@@ -34,6 +34,7 @@ export function SettingsJson({ settings }: { settings: EditorSettings }) {
         </h2>
 
         <button
+        aria-label="Hide | Show"
           type="button"
           onClick={() => setIsOpen((current) => !current)}
           aria-expanded={isOpen}

@@ -11,10 +11,11 @@ import { caveat } from "@/config/font";
 import { useSound } from "@/context/SoundContext";
 import { CircleZap } from "@/svgs/essentials/CircleZap";
 
-import { AvailableBadge } from "./AvailableBadge";
+import { HeroVideo } from "../common/HeroVideo";
 import { Reveal } from "../common/Reveal";
+import { AvailableBadge } from "./AvailableBadge";
 
-const LOGO = "/assets/logo.png";
+const LOGO = "/assets/logo.webp";
 const AVATAR = "/assets/profile2.webp";
 
 export const HeroAvatar = () => {
@@ -163,17 +164,7 @@ export const HeroAvatar = () => {
     <div className="relative">
       {/* Hero GIF */}
       <Reveal>
-        <div className="relative z-0 mx-auto my-5 h-42 w-full max-w-3xl overflow-hidden rounded-2xl shadow-xl sm:h-72 md:h-80">
-          <Image
-            fill
-            src="/assets/sukuna.gif"
-            alt="Sukuna GIF"
-            priority
-            unoptimized
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
+        <HeroVideo />
       </Reveal>
 
       {/* Mobile: avatar overlaps GIF, buttons on either side */}

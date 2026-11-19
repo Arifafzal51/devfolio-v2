@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
   return generateContentMetadata({
     title: "Movies - My Favorites",
     description: "Movies and shows that have inspired and entertained me.",
-    image: "/meta/movies.png",
+    image: "/meta/movies.webp",
     path: "/movies",
     type: "website",
   });

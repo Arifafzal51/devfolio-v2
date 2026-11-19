@@ -22,7 +22,7 @@ export function generateMetadata(): Metadata {
     title: "Gears - My Setup & Tools",
     description:
       "Explore the devices, software, and tools I use to build products.",
-    image: "/meta/gears.png",
+    image: "/meta/gears.webp",
     path: "/gears",
     type: "website",
   });

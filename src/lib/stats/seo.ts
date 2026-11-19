@@ -28,7 +28,7 @@ export function generateContentMetadata({
   publishedTime,
   tags,
 }: ContentMetadata): Metadata {
-  const imageUrl = absoluteUrl(image || "/meta/og-img.png");
+  const imageUrl = absoluteUrl(image || "/meta/og-img.webp");
   const canonicalUrl = absoluteUrl(path);
 
   return {

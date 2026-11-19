@@ -1,22 +1,22 @@
 export const books = [
   {
     name: "The Subtle Art of Not Giving a Fuck",
-    imageUrl: "/books/subtle-art.png",
+    imageUrl: "/books/subtle-art.webp",
     category: "Self-help",
   },
   {
     name: "Atomic Habits",
-    imageUrl: "/books/atomic-habits.jpeg",
+    imageUrl: "/books/atomic-habits.webp",
     category: "Self-help",
   },
   {
     name: "The Psychology of Money",
-    imageUrl: "/books/psychology-of-money.jpeg",
+    imageUrl: "/books/psychology-of-money.webp",
     category: "Finance",
   },
   {
     name: "The Millionaire Fastlane",
-    imageUrl: "/books/millionaire-fastlane.jpeg",
+    imageUrl: "/books/millionaire-fastlane.webp",
     category: "Finance",
   },
   {
@@ -26,37 +26,37 @@ export const books = [
   },
   {
     name: "Zero to One",
-    imageUrl: "/books/zero-to-one.jpeg",
+    imageUrl: "/books/zero-to-one.webp",
     category: "Business",
   },
   {
     name: "Do It Today",
-    imageUrl: "/books/do-it-today.jpeg",
+    imageUrl: "/books/do-it-today.webp",
     category: "Self-help",
   },
   {
     name: "Can We Be Strangers Again?",
-    imageUrl: "/books/can-we-be-strangers.jpeg",
+    imageUrl: "/books/can-we-be-strangers.webp",
     category: "Romance",
   },
   {
     name: "Ikigai",
-    imageUrl: "/books/ikigai.jpeg",
+    imageUrl: "/books/ikigai.webp",
     category: "Philosophy",
   },
   {
     name: "It Ends with Us",
-    imageUrl: "/books/it-ends-with-us.jpeg",
+    imageUrl: "/books/it-ends-with-us.webp",
     category: "Romance",
   },
   {
     name: "It Starts with Us",
-    imageUrl: "/books/it-starts-with-us.jpeg",
+    imageUrl: "/books/it-starts-with-us.webp",
     category: "Romance",
   },
   {
     name: "The Lean Startup",
-    imageUrl: "/books/lean-startup.jpeg",
+    imageUrl: "/books/lean-startup.webp",
     category: "Business",
   },
 ];

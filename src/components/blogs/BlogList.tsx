@@ -62,6 +62,7 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
       <div className="mb-8 flex flex-wrap items-center gap-2">
         <button
           type="button"
+          aria-label="All"
           onClick={() => setSelectedCategory("all")}
           aria-pressed={selectedCategory === "all"}
           className={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
@@ -87,6 +88,7 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
             <button
               key={category}
               type="button"
+              aria-label="Category"
               onClick={() => setSelectedCategory(category)}
               aria-pressed={isSelected}
               className={`rounded-full border px-3 py-1.5 text-sm capitalize transition-colors ${
@@ -104,6 +106,7 @@ const BlogList = ({ blogs }: { blogs: Blog[] }) => {
         {rankedCategories.length > 5 && (
           <button
             type="button"
+            aria-label="Hide | Show All"
             onClick={() => setShowAllCategories((prev) => !prev)}
             aria-expanded={showAllCategories}
             className="border-border text-muted-foreground hover:text-foreground rounded-full border bg-neutral-100 px-3 py-1.5 text-sm transition-colors dark:bg-neutral-900"

@@ -10,7 +10,7 @@ export const siteConfig = {
   title: "Devfolio",
   desc: "A developer portfolio template by @igmoni.",
   url: siteUrl,
-  ogImage: "/meta/og-img.png",
+  ogImage: "/meta/og-img.webp",
 
   author: {
     name: item.name,
@@ -47,72 +47,72 @@ export const pageMetaData: Record<string, PageMeta> = {
     title: `${item.name} - Full Stack Developer`,
     description:
       "I build modern websites and digital products focused on design and performance.",
-    ogImage: "/meta/og-img.png",
+    ogImage: "/meta/og-img.webp",
   },
 
   "/blog": {
     title: "Blog - Development & Tutorials",
     description:
       "Articles and tutorials on programming, engineering, and web development.",
-    ogImage: "/meta/blog.png",
+    ogImage: "/meta/blog.webp",
   },
 
   "/books": {
     title: "Books - Reading & Recommendations",
     description: "Books I've read and recommendations worth exploring.",
-    ogImage: "/meta/books.png",
+    ogImage: "/meta/books.webp",
   },
 
   "/designs": {
     title: "Designs - Creative Work",
     description: "Explore my visual experiments, UI concepts, and design work.",
-    ogImage: "/meta/designs.png",
+    ogImage: "/meta/designs.webp",
   },
 
   "/gears": {
     title: "Gears - My Setup & Tools",
     description:
       "Explore the tools, devices, and software I use to build products.",
-    ogImage: "/meta/gears.png",
+    ogImage: "/meta/gears.webp",
   },
 
   "/movies": {
     title: "Movies - Watchlist & Reviews",
     description: "Movies I've watched, saved, and recommend.",
-    ogImage: "/meta/movies.png",
+    ogImage: "/meta/movies.webp",
   },
 
   "/projects": {
     title: "Projects - My Work & Case Studies",
     description: "Explore my projects, applications, and software products.",
-    ogImage: "/meta/project.png",
+    ogImage: "/meta/project.webp",
   },
 
   "/resume": {
     title: "Resume - Experience & Skills",
     description:
       "Explore my development experience, technical skills, and projects.",
-    ogImage: "/meta/resume.png",
+    ogImage: "/meta/resume.webp",
   },
 
   "/setup": {
     title: "Setup - My Workspace",
     description: "A look at my workspace, development environment, and setup.",
-    ogImage: "/meta/setup.png",
+    ogImage: "/meta/setup.webp",
   },
 
   "/work": {
     title: "Work - Experience & Collaborations",
     description:
       "Explore my professional experience, collaborations, and work.",
-    ogImage: "/meta/work.png",
+    ogImage: "/meta/work.webp",
   },
 
   "/contact": {
     title: "Contact - Get in Touch",
     description:
       "Get in touch for freelance projects, collaborations, and opportunities.",
-    ogImage: "/meta/contact.png",
+    ogImage: "/meta/contact.webp",
   },
 };
 

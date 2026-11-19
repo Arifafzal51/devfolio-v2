@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
     title: "Projects - My Work & Case Studies",
     description:
       "Explore the web applications, products, and experiments I've built.",
-    image: "/meta/project.png",
+    image: "/meta/project.webp",
     path: "/projects",
     type: "website",
   });

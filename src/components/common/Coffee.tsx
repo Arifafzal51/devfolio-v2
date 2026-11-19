@@ -12,7 +12,7 @@ export function Coffee({ className }: { className?: string }) {
       className="inline-block"
     >
       <Image
-        src="/assets/coffee.png"
+        src="/assets/coffee.webp"
         alt="Buy Me A Coffee"
         width={100}
         height={100}

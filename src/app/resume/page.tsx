@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
     title: "Resume - Professional Experience",
     description:
       "View my professional resume, technical skills, projects, and experience.",
-    image: "/meta/resume.png",
+    image: "/meta/resume.webp",
     path: "/resume",
     type: "website",
   });

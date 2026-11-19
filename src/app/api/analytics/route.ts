@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { connection, NextResponse } from "next/server";
 
 const BASE_URL = "https://api.vercel.com/v1/query/web-analytics/visits";
 
@@ -26,6 +26,7 @@ function normalizeTotals(t?: VercelTotals) {
 }
 
 export async function GET() {
+  await connection()
   const token = process.env.VERCEL_TOKEN ?? process.env.VERCEL_TOKEN_ID;
   const projectId = process.env.VERCEL_PROJECT_ID;
 

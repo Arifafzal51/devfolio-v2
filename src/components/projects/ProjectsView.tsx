@@ -34,11 +34,11 @@ const ProjectsView = ({ projects }: ProjectsViewProps) => {
           </Heading>
 
           <div className="mt-7 flex items-center gap-5 rounded-lg">
-            <button onClick={() => setView("list")}>
+            <button aria-label="List view" onClick={() => setView("list")}>
               <TextAlignStart className="hover:text-accent-foreground size-6 text-neutral-500" />
             </button>
 
-            <button onClick={() => setView("grid")}>
+            <button aria-label="Grid view" onClick={() => setView("grid")}>
               <LayoutGrid className="hover:text-accent-foreground size-6 text-neutral-500" />
             </button>
           </div>

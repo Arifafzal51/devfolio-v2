@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
     title: "Books - My Reading List",
     description:
       "Explore books that have influenced my thinking, learning, and growth.",
-    image: "/meta/books.png",
+    image: "/meta/books.webp",
     path: "/books",
     type: "website",
   });

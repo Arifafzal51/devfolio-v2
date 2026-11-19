@@ -111,7 +111,7 @@ const WakaTimeData = () => {
 
           <span className="bg-muted-foreground/10 rounded-full">
             <Image
-              src="/assets/cursor.png"
+              src="/assets/cursor.webp"
               alt="Cursor"
               width={20}
               height={20}
@@ -148,7 +148,7 @@ const WakaTimeData = () => {
       <span className="text-primary flex items-center justify-end gap-1 font-semibold dark:text-white">
         Offline in
         <Image
-          src="/assets/cursor.png"
+          src="/assets/cursor.webp"
           alt="Cursor"
           width={18}
           height={18}
