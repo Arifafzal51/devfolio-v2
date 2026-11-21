@@ -18,8 +18,10 @@ export default function UmamiClient() {
   const searchParams = useSearchParams();
   const lastTrackedUrl = useRef<string | null>(null);
 
-  const websiteId = process.env.UMAMI_ID;
-  const scriptUrl = process.env.UMAMI_SRC;
+  const websiteId =
+    process.env.NEXT_PUBLIC_UMAMI_ID ?? process.env.UMAMI_ID;
+  const scriptUrl =
+    process.env.NEXT_PUBLIC_UMAMI_SRC ?? process.env.UMAMI_SRC;
 
   const queryString = searchParams.toString();
   const currentUrl = pathname + (queryString ? `?${queryString}` : "");
