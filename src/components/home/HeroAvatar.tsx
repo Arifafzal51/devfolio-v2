@@ -15,7 +15,7 @@ import { Reveal } from "../common/Reveal";
 import { AvailableBadge } from "./AvailableBadge";
 
 const LOGO = "/assets/logo.webp";
-const AVATAR = "/assets/avatar-v2.jpg";
+const AVATAR = "/assets/avatar-v4.jpg";
 
 export const HeroAvatar = () => {
   const [image, setImage] = useState(AVATAR);
