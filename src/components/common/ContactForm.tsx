@@ -166,7 +166,7 @@ export function ContactForm({
                 <Input
                   id="contact-phone"
                   type="tel"
-                  placeholder="+91 98765 43210"
+                  placeholder="0000000000"
                   autoComplete="tel"
                   aria-invalid={!!errors.phone}
                   className={cn(fieldClassName, "pl-10")}
