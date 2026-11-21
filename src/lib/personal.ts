@@ -1,63 +1,93 @@
-export const books = [
-  {
-    name: "The Subtle Art of Not Giving a Fuck",
-    imageUrl: "/books/subtle-art.webp",
-    category: "Self-help",
-  },
+export type Book = {
+  name: string;
+  author?: string;
+  imageUrl: string;
+  category: string;
+};
+
+export const books: Book[] = [
+  // Mindset & Growth
   {
     name: "Atomic Habits",
+    author: "James Clear",
     imageUrl: "/books/atomic-habits.webp",
-    category: "Self-help",
+    category: "Mindset & Growth",
+  },
+  {
+    name: "Psycho-Cybernetics",
+    author: "Maxwell Maltz",
+    imageUrl: "/books/psycho-cybernetics.webp",
+    category: "Mindset & Growth",
   },
   {
     name: "The Psychology of Money",
+    author: "Morgan Housel",
     imageUrl: "/books/psychology-of-money.webp",
-    category: "Finance",
-  },
-  {
-    name: "The Millionaire Fastlane",
-    imageUrl: "/books/millionaire-fastlane.webp",
-    category: "Finance",
-  },
-  {
-    name: "Verity",
-    imageUrl: "/books/verity.webp",
-    category: "Thriller",
-  },
-  {
-    name: "Zero to One",
-    imageUrl: "/books/zero-to-one.webp",
-    category: "Business",
+    category: "Mindset & Growth",
   },
   {
     name: "Do It Today",
+    author: "Darius Foroux",
     imageUrl: "/books/do-it-today.webp",
-    category: "Self-help",
-  },
-  {
-    name: "Can We Be Strangers Again?",
-    imageUrl: "/books/can-we-be-strangers.webp",
-    category: "Romance",
+    category: "Mindset & Growth",
   },
   {
     name: "Ikigai",
+    author: "Héctor García & Francesc Miralles",
     imageUrl: "/books/ikigai.webp",
-    category: "Philosophy",
+    category: "Mindset & Growth",
+  },
+
+  // Computer Science & Engineering (B.Tech CSE - GLA University)
+  {
+    name: "Design & Analysis of Algorithms",
+    author: "Cormen, Leiserson, Rivest & Stein (CLRS)",
+    imageUrl: "/books/algorithms.webp",
+    category: "Computer Science & Engineering",
   },
   {
-    name: "It Ends with Us",
-    imageUrl: "/books/it-ends-with-us.webp",
-    category: "Romance",
+    name: "Java & Object-Oriented Programming (OOPS)",
+    author: "Kathy Sierra & Bert Bates",
+    imageUrl: "/books/head-first-java.webp",
+    category: "Computer Science & Engineering",
   },
   {
-    name: "It Starts with Us",
-    imageUrl: "/books/it-starts-with-us.webp",
-    category: "Romance",
+    name: "Operating System Concepts",
+    author: "Silberschatz, Galvin & Gagne",
+    imageUrl: "/books/operating-systems.webp",
+    category: "Computer Science & Engineering",
+  },
+  {
+    name: "Computer Networking: A Top-Down Approach",
+    author: "James Kurose & Keith Ross",
+    imageUrl: "/books/computer-networking.webp",
+    category: "Computer Science & Engineering",
+  },
+  {
+    name: "Database System Concepts (DBMS)",
+    author: "Abraham Silberschatz & Henry F. Korth",
+    imageUrl: "/books/database-systems.webp",
+    category: "Computer Science & Engineering",
+  },
+
+  // Business & Startups
+  {
+    name: "Zero to One",
+    author: "Peter Thiel",
+    imageUrl: "/books/zereo-to-one.webp",
+    category: "Business & Startups",
   },
   {
     name: "The Lean Startup",
+    author: "Eric Ries",
     imageUrl: "/books/lean-startup.webp",
-    category: "Business",
+    category: "Business & Startups",
+  },
+  {
+    name: "The Millionaire Fastlane",
+    author: "MJ DeMarco",
+    imageUrl: "/books/millionaire-fastlane.webp",
+    category: "Business & Startups",
   },
 ];
 

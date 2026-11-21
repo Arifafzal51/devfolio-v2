@@ -63,6 +63,11 @@ export default function Page() {
                         <h3 className="mt-3 text-sm leading-snug font-medium">
                           {book.name}
                         </h3>
+                        {book.author && (
+                          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400 line-clamp-1">
+                            {book.author}
+                          </p>
+                        )}
                       </article>
                     ))}
                   </div>
