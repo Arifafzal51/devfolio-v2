@@ -83,20 +83,27 @@ async function deactivate(payload: { data: unknown }) {
   }
 }
 
-const handler = Webhooks({
-  webhookKey: process.env.DODO_PAYMENTS_WEBHOOK_KEY!,
+function getHandler() {
+  const webhookKey = process.env.DODO_PAYMENTS_WEBHOOK_KEY;
+  if (!webhookKey) return null;
 
-  onSubscriptionActive: activate,
-  onSubscriptionRenewed: activate,
-
-  onSubscriptionCancelled: deactivate,
-  onSubscriptionExpired: deactivate,
-  onSubscriptionFailed: deactivate,
-  onSubscriptionOnHold: deactivate,
-});
+  return Webhooks({
+    webhookKey,
+    onSubscriptionActive: activate,
+    onSubscriptionRenewed: activate,
+    onSubscriptionCancelled: deactivate,
+    onSubscriptionExpired: deactivate,
+    onSubscriptionFailed: deactivate,
+    onSubscriptionOnHold: deactivate,
+  });
+}
 
 export async function POST(req: NextRequest) {
   try {
+    const handler = getHandler();
+    if (!handler) {
+      return new Response("Webhook key not configured", { status: 500 });
+    }
     const response = await handler(req);
     return response;
   } catch (error) {

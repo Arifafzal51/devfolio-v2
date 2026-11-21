@@ -77,7 +77,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <link
           rel="preload"
           as="image"
-          href="/assets/sukuna.webm"
+          href="/assets/developer-hero.gif"
           fetchPriority="high"
         />
       </head>

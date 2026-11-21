@@ -4,8 +4,6 @@ import { Resend } from "resend";
 
 import { contactFormSchema } from "@/validations/contact-schema";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
 
 const RATE_LIMIT_WINDOW = 60_000;
@@ -90,6 +88,7 @@ export async function POST(request: Request) {
 
     const { name, email, phone, message } = parsed.data;
 
+    const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: sender,
       to: [recipient],

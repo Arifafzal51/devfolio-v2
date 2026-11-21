@@ -1,7 +1,7 @@
 import DodoPayments from "dodopayments";
 
 export const dodo = new DodoPayments({
-  bearerToken: process.env.DODO_PAYMENTS_API_KEY!,
+  bearerToken: process.env.DODO_PAYMENTS_API_KEY || "dummy_key",
   environment:
     process.env.DODO_PAYMENTS_ENVIRONMENT === "live_mode"
       ? "live_mode"
