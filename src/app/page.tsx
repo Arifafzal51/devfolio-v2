@@ -16,6 +16,7 @@ import { Setup } from "@/components/home/Setup";
 import { SkillsCarousel } from "@/components/home/SkillsCarousel";
 import { Spotify } from "@/components/home/Spotify";
 import { Testimonial } from "@/components/home/Testimonial";
+import { InstagramSection } from "@/components/home/Instagram";
 
 const Page = async () => {
   return (
@@ -57,6 +58,8 @@ const Page = async () => {
       </Suspense>
 
       <Testimonial />
+
+      <InstagramSection />
 
       <Setup />
       <Personal />

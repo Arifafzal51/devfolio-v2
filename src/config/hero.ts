@@ -1,4 +1,5 @@
 import { Github } from "@/svgs/socials/Github";
+import { Instagram } from "@/svgs/socials/Instagram";
 import { LinkedIn } from "@/svgs/socials/LinkedIn";
 import { Mail } from "@/svgs/socials/Mail";
 
@@ -27,6 +28,12 @@ export const heroConfig = {
     },
     {
       id: 3,
+      name: "Instagram",
+      icon: Instagram,
+      value: "https://www.instagram.com/arifafzal.in/",
+    },
+    {
+      id: 4,
       name: "Email",
       icon: Mail,
       value: "mailto:arifafzal51@gmail.com",

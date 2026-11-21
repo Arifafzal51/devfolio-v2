@@ -4,6 +4,7 @@ import { Blog } from "@/svgs/essentials/Blog";
 import { Home } from "@/svgs/essentials/Home";
 import { Project } from "@/svgs/essentials/Project";
 import { Github } from "@/svgs/socials/Github";
+import { Instagram } from "@/svgs/socials/Instagram";
 import { LinkedIn } from "@/svgs/socials/LinkedIn";
 
 export const navItems = [
@@ -17,6 +18,7 @@ export const navItems = [
 export const navSocialLinks = [
   { id: 1, name: "Github", icon: Github, value: "https://github.com/Arifafzal51" },
   { id: 2, name: "LinkedIn", icon: LinkedIn, value: "https://linkedin.com/in/hyarif/" },
+  { id: 3, name: "Instagram", icon: Instagram, value: "https://www.instagram.com/arifafzal.in/" },
 ];
 
 export const setupConfig = [
