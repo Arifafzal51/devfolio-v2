@@ -1,8 +1,11 @@
+import { getAllRegionalHirePages } from "@/config/programmatic-hire";
+
 export default function sitemap() {
   const baseUrl = process.env.SITE_URL || "https://arifafzal.dev";
 
-  const routes = [
+  const staticRoutes = [
     "",
+    "/hire",
     "/projects",
     "/blog",
     "/work",
@@ -16,10 +19,19 @@ export default function sitemap() {
     "/side-quests",
   ];
 
-  return routes.map((route) => ({
+  const staticEntries = staticRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: route === "" ? 1 : 0.8,
+    changeFrequency: "weekly" as const,
+    priority: route === "" ? 1 : route === "/hire" ? 0.9 : 0.8,
   }));
+
+  const hirePages = getAllRegionalHirePages().map((page) => ({
+    url: `${baseUrl}/hire/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  return [...staticEntries, ...hirePages];
 }
