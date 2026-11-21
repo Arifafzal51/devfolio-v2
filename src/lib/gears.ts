@@ -1,22 +1,39 @@
 import { Headphones } from "@/svgs/devices/Headphones";
 import { Laptop } from "@/svgs/devices/Laptop";
+import { Monitor } from "@/svgs/devices/Monitor";
 import { Phone } from "@/svgs/devices/Phone";
+import { Watch } from "@/svgs/devices/Watch";
 
 export const devices = [
   {
-    name: "Asus TUF F15 Gaming Laptop 16GB 512GB",
+    name: "Dell Inspiron 5502 (Intel Core i5 11th Gen)",
     icon: Laptop,
-    href: "https://www.flipkart.com/asus-tuf-gaming-f15-ai-powered-intel-core-i5-11th-gen-11260h-8-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-144-hz-70-tgp-fx506hf-hn075w-laptop/p/itmbd858702e076f?pid=COMGS2AJESZQCMRT&lid=LSTCOMGS2AJESZQCMRTZVTWT2&marketplace=FLIPKART&q=asus+tuf+f15&store=6bo%2Fb5g&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=024aae02-1841-43ac-a74b-82a35b9de8d7.COMGS2AJESZQCMRT.SEARCH&ppt=hp&ppn=homepage&ssid=3pxadt9jnk0000001769408843876&qH=5dc9ce75c3155017",
+    href: "https://www.dell.com/support/home/en-in/product-support/product/inspiron-15-5502-laptop/overview",
   },
   {
-    name: "Oneplus 13R (256GB)",
+    name: "LG Monitor 27-inch",
+    icon: Monitor,
+    href: "https://www.lg.com/in/monitors/27-inch-monitors/",
+  },
+  {
+    name: "Samsung Galaxy S24 Ultra",
     icon: Phone,
-    href: "https://www.flipkart.com/oneplus-13r-5g-astral-trail-256-gb/p/itmff6561809fab8?pid=MOBH8EVKZHTE7A32&lid=LSTMOBH8EVKZHTE7A32A5T0T4&marketplace=FLIPKART&q=oneplus+13r&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=8d0b5c64-8208-446b-86c8-da68e990d74c.MOBH8EVKZHTE7A32.SEARCH&ppt=pp&ppn=pp&ssid=febdohvt5c0000001769408908244&qH=451f55dc23582ad5",
+    href: "https://www.samsung.com/in/smartphones/galaxy-s24-ultra/",
   },
   {
-    name: "Boat Rockerz 450",
+    name: "Samsung Galaxy Watch 8",
+    icon: Watch,
+    href: "https://www.samsung.com/in/watches/all-watches/",
+  },
+  {
+    name: "Moondrop Chu II",
     icon: Headphones,
-    href: "https://www.flipkart.com/boat-450-pro-upto-70-hours-playback-bluetooth/p/itm575777beb2c09?pid=ACCGYUVXVVMZJRHF&lid=LSTACCGYUVXVVMZJRHFLBRF8N&marketplace=FLIPKART&q=boat+headphones+rockerz+450&store=0pm%2Ffcn%2Fgc3&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_3_20_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_3_20_na_na_na&fm=organic&iid=en_vU5C_kNn6MG43j1eF0HNLUUpXPJvXJJYQ3oQeVp-lHyU8ACM_oB0aHYF-jz0XuFF_HFPDcHXEIDqsLUkOQ22ZA%3D%3D&ppt=pp&ppn=pp&ssid=oopbgzcvqo0000001769408936153&qH=9900aa6cb9c9c2a1",
+    href: "https://moondroplab.com/en/products/chu-ii",
+  },
+  {
+    name: "Oppo Enco Air 2 Pro",
+    icon: Headphones,
+    href: "https://www.oppo.com/in/accessories/enco-air2-pro/",
   },
 ];
 
