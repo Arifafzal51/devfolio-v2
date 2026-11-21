@@ -15,10 +15,10 @@ import { Reveal } from "../common/Reveal";
 import { AvailableBadge } from "./AvailableBadge";
 
 const LOGO = "/assets/logo.webp";
-const AVATAR = "/assets/profile2.webp";
+const AVATAR = "/assets/avatar.jpg";
 
 export const HeroAvatar = () => {
-  const [image, setImage] = useState(LOGO);
+  const [image, setImage] = useState(AVATAR);
   const [glitch, setGlitch] = useState(false);
 
   const { soundEnabled, setSoundEnabled } = useSound();
@@ -206,7 +206,7 @@ export const HeroAvatar = () => {
       <Reveal delay={0.5}>
         <div className="absolute -bottom-5 -left-30 z-30 hidden -rotate-12 flex-col items-center lg:flex">
           <a
-            href="mailto:mohansp119@gmail.com"
+            href="mailto:arifafzal51@gmail.com"
             className={`${caveat.className} hire-me-shake text-muted-foreground hover:text-accent-foreground text-2xl`}
           >
             HIRE ME

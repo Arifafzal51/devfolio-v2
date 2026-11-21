@@ -1,6 +1,6 @@
 export const githubConfig = {
-  username: "igmoni",
-  githubLink: "https://www.github.com/igmoni",
+  username: "Arifafzal51",
+  githubLink: "https://www.github.com/Arifafzal51",
   subtitle: "proof of progress",
   blockSize: 11,
   blockMargin: 3,

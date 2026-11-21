@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = (process.env.SITE_URL || "https://mohanx.in").replace(
+const SITE_URL = (process.env.SITE_URL || "https://arifafzal.dev").replace(
   /\/+$/,
   ""
 );
@@ -62,7 +62,7 @@ export function generateContentMetadata({
       title,
       description,
       images: [imageUrl],
-      creator: "@_igmoni",
+      creator: "@hyarif",
     },
 
     robots: {

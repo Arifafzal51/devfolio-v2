@@ -589,7 +589,7 @@ type User = {
 
 const user: Readonly<User> = {
   id: 1,
-  name: "Mohan",
+  name: "Arif",
 };
 
 user.name = "Rahul";
@@ -617,11 +617,11 @@ type UserPreview = Pick<User, "id" | "name">;
 // This object is valid because it contains exactly 'id' and 'name'
 const preview: UserPreview = {
   id: 1,
-  name: "Mohan",
+  name: "Arif",
 };
 
 // Error: Property 'email' does not exist on type 'UserPreview'
-// preview.email = "mohan@example.com";
+// preview.email = "arif@example.com";
 ```
 
 Useful for:
@@ -992,7 +992,7 @@ const name: string = "Luffy";
 This works — but it’s unnecessary.
 
 ```tsx
-const name = "Mohan";
+const name = "Arif";
 // TypeScript already knows it's a string
 ```
 

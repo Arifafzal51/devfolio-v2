@@ -32,10 +32,7 @@ const gymStats = [
 const languages = [
   { name: "English", level: "Fluent" },
   { name: "Hindi", level: "Fluent" },
-  { name: "Marathi", level: "Fluent" },
-  { name: "Kannada", level: "Fluent" },
-  { name: "Tamil", level: "Conversational" },
-  { name: "French", level: "Learning" },
+  { name: "Urdu", level: "Conversational" },
 ];
 
 const activities = [

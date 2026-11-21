@@ -21,42 +21,42 @@ import { AppProviders } from "@/providers/AppProviders";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL || "https://mohanx.in"),
+  metadataBase: new URL(process.env.SITE_URL || "https://arifafzal.dev"),
   alternates: {
-    canonical: "https://mohanx.in",
+    canonical: "https://arifafzal.dev",
   },
   title: {
-    default: "Mohan S P - Full Stack Web Developer",
+    default: "Arif Afzal - Software Developer & Educator",
     template: "%s",
   },
 
   description:
-    "I build modern websites and digital products focused on design and performance.",
+    "Software developer and computer science educator passionate about building useful digital products, solving complex problems, and helping others understand technology.",
 
   openGraph: {
     type: "website",
-    url: "https://mohanx.in/",
-    title: "Mohan S P - Full Stack Web Developer",
+    url: "https://arifafzal.dev/",
+    title: "Arif Afzal - Software Developer & Educator",
     description:
-      "I build modern websites and digital products focused on design and performance.",
-    siteName: "Mohan S P",
+      "Software developer and computer science educator passionate about building useful digital products, solving complex problems, and helping others understand technology.",
+    siteName: "Arif Afzal",
     images: [
       {
-        url: "https://mohanx.in/meta/og-img.webp",
+        url: "https://arifafzal.dev/meta/og-img.webp",
         width: 1200,
         height: 630,
-        alt: "Mohan S P Portfolio Preview",
+        alt: "Arif Afzal Portfolio Preview",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Mohan S P - Full Stack Web Developer",
+    title: "Arif Afzal - Software Developer & Educator",
     description:
-      "I build modern websites and digital products focused on design and performance.",
-    images: ["https://mohanx.in/meta/og-img.webp"],
-    creator: "@_igmoni",
+      "Software developer and computer science educator passionate about building useful digital products, solving complex problems, and helping others understand technology.",
+    images: ["https://arifafzal.dev/meta/og-img.webp"],
+    creator: "@hyarif",
   },
 
   robots: {

@@ -39,10 +39,23 @@ export const technologies: StacksProps[] = [
   { name: "TypeScript", Icon: <TypeScript /> },
 ];
 
+const ALIASES: Record<string, string> = {
+  reactjs: "React",
+  nodejs: "Node.js",
+  express: "Express.js",
+  tailwind: "Tailwind CSS",
+  html5: "HTML",
+  css3: "CSS",
+  js: "JavaScript",
+  ts: "TypeScript",
+  nextjs: "Next.js",
+};
+
 export function getStacks(names: string[]): StacksProps[] {
   return names.flatMap((name) => {
+    const canonical = ALIASES[name.toLowerCase()] || name;
     const technology = technologies.find(
-      (item) => item.name.toLowerCase() === name.toLowerCase()
+      (item) => item.name.toLowerCase() === canonical.toLowerCase()
     );
 
     return technology ? [technology] : [];

@@ -1,8 +1,10 @@
-# Devfolio — Personal Developer Portfolio
+# Arif Afzal — Developer Portfolio
 
-A personal developer portfolio built with Next.js to showcase my projects, technical skills, professional experience, and interests.
+Personal developer portfolio for Arif Afzal — Software Developer, Technical Educator, and Founder. Built with Next.js, TypeScript, and Tailwind CSS.
 
-**Live Website:** https://mohanx.in
+**GitHub:** https://github.com/Arifafzal51  
+**LinkedIn:** https://linkedin.com/in/hyarif/  
+**Email:** arifafzal51@gmail.com
 
 ## Features
 

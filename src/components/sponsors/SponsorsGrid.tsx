@@ -12,8 +12,8 @@ import { Sponsor } from "@/lib/sponsors/sponsors";
 import { SponsorModal } from "./SponsorModal";
 
 // TODO: replace with your own links
-const COFFEE_URL = "https://buymeacoffee.com/igmoni";
-const X_URL = "https://x.com/_igmoni";
+const COFFEE_URL = "https://github.com/Arifafzal51";
+const X_URL = "https://linkedin.com/in/hyarif/";
 
 const MIN_SLOTS = 4;
 const TILTS = ["-rotate-3", "rotate-2", "-rotate-2", "rotate-3"];

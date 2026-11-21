@@ -1,17 +1,19 @@
 export default function sitemap() {
-  const baseUrl = "https://mohanx.in";
+  const baseUrl = process.env.SITE_URL || "https://arifafzal.dev";
 
   const routes = [
     "",
     "/projects",
     "/blog",
-    "/about",
+    "/work",
+    "/resume",
     "/contact",
     "/gears",
-    "setup",
+    "/setup",
     "/designs",
     "/books",
     "/movies",
+    "/side-quests",
   ];
 
   return routes.map((route) => ({

@@ -1,0 +1,40 @@
+---
+title: "Deal Detective - Price Intelligence & Scraping Platform"
+shortTitle: "Deal Detective"
+about: "Data Systems & E-Commerce Automation"
+description: "An automated price intelligence suite tracking multi-retailer inventory across Amazon and Flipkart with trend extraction, historical analysis, and threshold alerts."
+image: "/projects/deal-detective.webp"
+stack: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"]
+github: "https://github.com/Arifafzal51/DealDetective"
+timeline: "2024"
+role: "Full Stack Developer"
+team: "Solo"
+status: "Working"
+isPublished: true
+date: "2024-09-20"
+---
+
+# Deal Detective — Algorithmic Scraping & Price Intelligence
+
+## Overview
+
+Deal Detective is an automated price tracking and market intelligence platform that monitors e-commerce products across major platforms including Amazon and Flipkart. Designed to empower consumers with historical analytics, the application parses dynamic product catalogs on an hourly cron schedule, detects price drops, and dispatches instant email notifications.
+
+## Key Features
+
+- **Automated Hourly Crawlers:** Scheduled worker pipelines extract real-time pricing, stock status, and deal badges without getting rate-limited.
+- **Historical Fluctuations Database:** Time-series price snapshots stored in MongoDB calculate rolling minimum, maximum, and average curves.
+- **Threshold-Based Alerts:** Real-time SMTP notifications sent straight to users whenever target thresholds are triggered.
+- **Interactive Visual Trend Curves:** Dynamic charts depicting pricing movements over 30, 60, and 90-day intervals.
+
+## Architectural Notes
+
+- **Resilient Extraction Pipeline:** Multi-stage HTML parser handling dynamic DOM trees and anti-bot obstacles gracefully.
+- **Time-Series Snapshots:** MongoDB schema optimized for time-stamped pricing records with rapid analytical aggregation.
+- **Cron-Driven Background Worker:** Decoupled background queue managing scheduled scrape tasks and notification dispatches.
+
+## Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend & Database:** Node.js, Express.js, MongoDB
+- **Automation:** Node-Cron, Nodemailer SMTP

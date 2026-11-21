@@ -1,33 +1,37 @@
 import { heroConfig as item } from "./hero";
 
-const siteUrl = (process.env.SITE_URL || "https://mohanx.in").replace(
+const siteUrl = (process.env.SITE_URL || "https://arifafzal.dev").replace(
   /\/+$/,
   ""
 );
 
 export const siteConfig = {
   name: item.name,
-  title: "Devfolio",
-  desc: "A developer portfolio template by @igmoni.",
+  title: "Arif Afzal",
+  desc: "Software Developer, Technical Educator, and Founder.",
   url: siteUrl,
   ogImage: "/meta/og-img.webp",
 
   author: {
     name: item.name,
-    twitter: "@_igmoni",
-    github: "igmoni",
-    linkedin: "igmoni",
-    email: "mohansp119@gmail.com",
+    twitter: "",
+    github: "Arifafzal51",
+    linkedin: "hyarif",
+    email: "arifafzal51@gmail.com",
   },
 
   keywords: [
     "portfolio",
     "developer",
-    "full-stack",
+    "software developer",
+    "technical educator",
     "React",
     "Next.js",
     "TypeScript",
     "JavaScript",
+    "Java",
+    "DSA",
+    "AWS Serverless",
     "web development",
     item.name.toLowerCase(),
   ],
@@ -44,9 +48,9 @@ type PageMeta = {
 
 export const pageMetaData: Record<string, PageMeta> = {
   "/": {
-    title: `${item.name} - Full Stack Developer`,
+    title: `${item.name} - Software Developer & Educator`,
     description:
-      "I build modern websites and digital products focused on design and performance.",
+      "Software developer and computer science educator passionate about building useful digital products, solving complex problems, and helping others understand technology.",
     ogImage: "/meta/og-img.webp",
   },
 

@@ -7,6 +7,6 @@ export default function robots() {
         disallow: [],
       },
     ],
-    sitemap: "https://mohanx.in/sitemap.xml",
+    sitemap: `${process.env.SITE_URL || "https://arifafzal.dev"}/sitemap.xml`,
   };
 }

@@ -7,8 +7,10 @@ import { Experience } from "@/components/home/Experience";
 import { Github } from "@/components/home/Github";
 import { Hero } from "@/components/home/Hero";
 import InsightsCard from "@/components/home/InsightCard";
+import { LeadershipAchievements } from "@/components/home/LeadershipAchievements";
 import { OpenWork } from "@/components/home/OpenWork";
 import { Personal } from "@/components/home/Personal";
+import { ProblemSolving } from "@/components/home/ProblemSolving";
 import { Projects } from "@/components/home/Projects";
 import { Setup } from "@/components/home/Setup";
 import { SkillsCarousel } from "@/components/home/SkillsCarousel";
@@ -37,6 +39,8 @@ const Page = async () => {
         <OpenWork />
       </Reveal>
 
+      <ProblemSolving />
+
       <Reveal delay={0.2}>
         <Experience />
       </Reveal>
@@ -44,6 +48,8 @@ const Page = async () => {
       <Suspense fallback={<div>Loading projects...</div>}>
         <Projects />
       </Suspense>
+
+      <LeadershipAchievements />
 
       <Suspense fallback={null}>
         <SponsorsCard />

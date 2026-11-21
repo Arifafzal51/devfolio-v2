@@ -1,4 +1,4 @@
-const SITE_URL = process.env.SITE_URL || "http://mohanx.in";
+const SITE_URL = process.env.SITE_URL || "https://arifafzal.dev";
 
 const posts = [
   {
@@ -69,7 +69,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Mohan's Blog</title>
+    <title>Arif's Blog</title>
     <link>${escapeXml(baseUrl)}/blog</link>
     <description>Latest articles from my blog.</description>
     <language>en-us</language>

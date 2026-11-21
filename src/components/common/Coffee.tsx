@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function Coffee({ className }: { className?: string }) {
   return (
     <Link
-      href="https://www.buymeacoffee.com/igmoni"
+      href="https://github.com/Arifafzal51"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block"

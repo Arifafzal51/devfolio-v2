@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server";
 
+import { githubConfig } from "@/config/github";
+
 export async function GET() {
   try {
     const response = await fetch(
-      "https://github-contributions.vercel.app/api/v1/igmoni",
+      `https://github-contributions.vercel.app/api/v1/${githubConfig.username}`,
       {
         next: { revalidate: 3600 },
       }

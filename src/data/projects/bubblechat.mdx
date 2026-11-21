@@ -1,0 +1,41 @@
+---
+title: "BubbleChat - Real-Time Messaging Platform"
+shortTitle: "BubbleChat"
+about: "Real-Time WebSocket & Cloud Architecture"
+description: "A distributed real-time messaging platform engineered for low-latency bidirectional communication across public channels and encrypted direct dialogues."
+image: "/projects/bubblechat.webp"
+stack: ["React", "Node.js", "WebSocket API", "AWS Serverless", "Tailwind CSS"]
+github: "https://github.com/Arifafzal51/Chat-Bubble"
+live: "https://chat-bubble-kohl.vercel.app/"
+timeline: "2024"
+role: "Full Stack Engineer"
+team: "Solo"
+status: "Working"
+isPublished: true
+date: "2024-11-15"
+---
+
+# BubbleChat — Real-Time Messaging & Cloud Architecture
+
+## Overview
+
+BubbleChat is a distributed, high-performance real-time communication platform built to sustain concurrent bidirectional data streaming across public community channels and private dialogues. The backend leverages an event-driven serverless architecture on AWS Lambda and WebSocket API Gateway, eliminating idle compute costs while guaranteeing sub-50ms message propagation.
+
+## Architectural Highlights
+
+- **Serverless Event Routing:** AWS Lambda route handlers manage connection pools, session state, and message broadcasts.
+- **Persistent Bi-directional Sockets:** Low-overhead WebSocket channels provide immediate status updates, presence indicators, and live typing events.
+- **Resilient Fallback & Heartbeats:** Automatic ping/pong reconnection loops safeguard against sporadic network drops.
+- **Client-Side State Management:** Optimistic UI updates with instant message delivery receipts and keyboard-first navigation.
+
+## Key Features
+
+- **Public Channels & 1-on-1 Rooms:** Seamless switching between high-throughput public channels and encrypted private 1-on-1 rooms.
+- **Micro-Telemetry Metrics:** Engineered to sustain 50+ concurrent active sessions with sub-50ms message propagation latency.
+- **Modern Responsive Design:** Crafted with ReactJS and Tailwind CSS with full dark/light aesthetics and mobile touch responsiveness.
+
+## Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Lucide Icons
+- **Backend:** Node.js, AWS Lambda Serverless, WebSocket API Gateway
+- **Deployment:** Vercel (Client) & AWS Cloud (Serverless backend)
