@@ -16,7 +16,6 @@ import { Setup } from "@/components/home/Setup";
 import { SkillsCarousel } from "@/components/home/SkillsCarousel";
 import { Spotify } from "@/components/home/Spotify";
 import { Testimonial } from "@/components/home/Testimonial";
-import { SponsorsCard } from "@/components/sponsors/SponsorsCard";
 
 const Page = async () => {
   return (
@@ -50,10 +49,6 @@ const Page = async () => {
       </Suspense>
 
       <LeadershipAchievements />
-
-      <Suspense fallback={null}>
-        <SponsorsCard />
-      </Suspense>
 
       <InsightsCard />
 
