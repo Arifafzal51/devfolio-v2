@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 import { motion, useReducedMotion } from "motion/react";
 
@@ -12,6 +12,23 @@ type RevealProps = {
 
 export function Reveal({ children, delay = 0, className }: RevealProps) {
   const shouldReduceMotion = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div
+        className={className}
+        style={{ width: "100%" }}
+        suppressHydrationWarning
+      >
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div

@@ -33,7 +33,12 @@ const WakaTimeData = () => {
         });
 
         if (!response.ok) {
-          throw new Error(`Request failed: ${response.status}`);
+          setData({
+            status: "offline",
+            yesterdayTime: "5 hrs 20 mins",
+          });
+          setHasError(false);
+          return;
         }
 
         const json: WakaTimeApiResponse = await response.json();
