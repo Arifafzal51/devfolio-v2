@@ -83,7 +83,7 @@ const Spotify = ({ track }: SpotifyProps) => {
   };
 
   return (
-    <div className="flex min-h-11 min-w-0 items-center justify-between gap-3">
+    <div className="gradient-tile flex min-h-11 min-w-0 items-center justify-between gap-3 rounded-2xl border border-neutral-200/80 bg-neutral-50/60 p-3 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/40">
       <div className="flex min-w-0 items-center gap-3">
         {song?.isPlaying && song.albumImageUrl ? (
           <Image

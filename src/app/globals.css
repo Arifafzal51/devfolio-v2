@@ -80,6 +80,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --c1: #6366f1;
+  --c2: #06b6d4;
+  --c3: #a855f7;
+  --c1-rgb: 99, 102, 241;
+  --c2-rgb: 6, 182, 212;
+  --c3-rgb: 168, 85, 247;
 }
 
 .dark {
@@ -360,4 +366,94 @@ html.theme-transition *::after {
     #000000 52%,
     #a3a3a3 60%
   );
+}
+
+/* Dynamic 3-Color Combo & Motion Animation */
+@keyframes orb-float-1 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(60px, 45px, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(-40px, 75px, 0) scale(0.95);
+  }
+}
+
+@keyframes orb-float-2 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-70px, 60px, 0) scale(1.1);
+  }
+  66% {
+    transform: translate3d(35px, -45px, 0) scale(0.94);
+  }
+}
+
+@keyframes orb-float-3 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(50px, -55px, 0) scale(0.96);
+  }
+  66% {
+    transform: translate3d(-55px, -30px, 0) scale(1.06);
+  }
+}
+
+.animate-orb-1 {
+  animation: orb-float-1 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-orb-2 {
+  animation: orb-float-2 26s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-orb-3 {
+  animation: orb-float-3 30s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Premium Minimal Subtle Gradient Effect on Tiles & Cards */
+.gradient-tile {
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  background-image: linear-gradient(
+    145deg,
+    rgba(var(--c1-rgb), 0.04) 0%,
+    transparent 50%,
+    rgba(var(--c2-rgb), 0.03) 100%
+  );
+}
+
+.gradient-tile:hover {
+  border-color: rgba(var(--c1-rgb), 0.35) !important;
+  box-shadow:
+    0 12px 32px -10px rgba(var(--c1-rgb), 0.12),
+    0 4px 12px -2px rgba(var(--c2-rgb), 0.08);
+}
+
+.dark .gradient-tile {
+  background-image: linear-gradient(
+    145deg,
+    rgba(var(--c1-rgb), 0.06) 0%,
+    transparent 50%,
+    rgba(var(--c3-rgb), 0.04) 100%
+  );
+}
+
+.dark .gradient-tile:hover {
+  border-color: rgba(var(--c1-rgb), 0.45) !important;
+  box-shadow:
+    0 12px 36px -10px rgba(var(--c1-rgb), 0.18),
+    0 4px 16px -2px rgba(var(--c2-rgb), 0.12);
 }

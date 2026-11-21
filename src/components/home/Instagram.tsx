@@ -20,7 +20,7 @@ const InstagramCard = ({ post, index }: { post: InstagramPost; index: number }) 
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Read thought on Instagram: ${post.title}`}
-        className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-50/90 via-white to-neutral-100/60 p-6 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-neutral-400 hover:shadow-md dark:border-neutral-800/80 dark:from-neutral-900/80 dark:via-neutral-900/40 dark:to-neutral-950/90 dark:hover:border-neutral-700"
+        className="gradient-tile group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-50/90 via-white to-neutral-100/60 p-6 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-neutral-400 hover:shadow-md dark:border-neutral-800/80 dark:from-neutral-900/80 dark:via-neutral-900/40 dark:to-neutral-950/90 dark:hover:border-neutral-700"
       >
         {/* Subtle decorative gradient glow on hover */}
         <div className="pointer-events-none absolute -top-12 -right-12 size-32 rounded-full bg-linear-to-br from-[#f09433]/10 via-[#e6683c]/10 to-[#bc1888]/10 blur-2xl transition-opacity duration-300 group-hover:opacity-100 dark:from-[#f09433]/15 dark:via-[#dc2743]/15 dark:to-[#bc1888]/15" />

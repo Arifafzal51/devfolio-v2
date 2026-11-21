@@ -50,7 +50,7 @@ export const ProblemSolving = () => {
           Problem Solving &amp; DSA
         </Heading>
 
-        <div className="rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 transition-colors dark:border-neutral-800 dark:bg-neutral-900/40">
+        <div className="gradient-tile rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 transition-colors dark:border-neutral-800 dark:bg-neutral-900/40">
           {/* Milestone Banner */}
           <div className="flex flex-col justify-between gap-4 border-b border-neutral-200 pb-5 sm:flex-row sm:items-center dark:border-neutral-800">
             <div>

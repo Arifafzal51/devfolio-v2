@@ -188,7 +188,7 @@ const Github = () => {
 
       {!isLoading && !hasError && contributions.length > 0 && (
         <div className="relative">
-          <div className="bg-background/50 mt-5 rounded-lg border-2 border-dashed border-neutral-200 p-6 backdrop-blur-sm dark:border-neutral-800">
+          <div className="gradient-tile bg-background/50 mt-5 rounded-lg border-2 border-dashed border-neutral-200 p-6 backdrop-blur-sm dark:border-neutral-800">
             <div className="w-full overflow-x-auto">
               <ActivityCalendar
                 data={contributions}

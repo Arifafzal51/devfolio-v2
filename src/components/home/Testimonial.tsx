@@ -27,7 +27,7 @@ const Testimonial = () => {
                 {[...testimonials, ...testimonials].map((item, idx) => (
                   <article
                     key={`${item.id}-${idx}`}
-                    className="flex w-[min(24rem,calc(100vw-3rem))] shrink-0 flex-col justify-between gap-5 rounded-2xl border border-neutral-200/90 bg-neutral-100/70 p-6 transition-colors duration-300 hover:border-neutral-300 dark:border-neutral-800/90 dark:bg-neutral-900/60 dark:hover:border-neutral-700"
+                    className="gradient-tile flex w-[min(24rem,calc(100vw-3rem))] shrink-0 flex-col justify-between gap-5 rounded-2xl border border-neutral-200/90 bg-neutral-100/70 p-6 transition-colors duration-300 hover:border-neutral-300 dark:border-neutral-800/90 dark:bg-neutral-900/60 dark:hover:border-neutral-700"
                   >
                     <div className="space-y-3">
                       <Quote
@@ -53,7 +53,7 @@ const Testimonial = () => {
               {testimonials.map((item) => (
                 <article
                   key={item.id}
-                  className="flex h-full flex-col justify-between gap-5 rounded-2xl border border-neutral-200/90 bg-neutral-100/70 p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-xs dark:border-neutral-800/90 dark:bg-neutral-900/60 dark:hover:border-neutral-700"
+                  className="gradient-tile flex h-full flex-col justify-between gap-5 rounded-2xl border border-neutral-200/90 bg-neutral-100/70 p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-xs dark:border-neutral-800/90 dark:bg-neutral-900/60 dark:hover:border-neutral-700"
                 >
                   <div className="space-y-3">
                     <Quote

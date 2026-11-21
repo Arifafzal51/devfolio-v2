@@ -309,7 +309,7 @@ export default function InsightsCard() {
     ));
 
   return (
-    <Container className="my-10 w-full max-w-none overflow-hidden bg-white font-sans text-zinc-900 dark:bg-[#0a0a0a] dark:text-white">
+    <Container className="gradient-tile my-10 w-full max-w-none overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/70 font-sans text-zinc-900 backdrop-blur-sm dark:border-zinc-800/80 dark:bg-[#0a0a0a]/70 dark:text-white">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-zinc-200 py-3 dark:border-zinc-800">
         <Heading as="h2" Icon={<ChartSpline />}>

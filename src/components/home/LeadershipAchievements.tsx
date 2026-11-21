@@ -49,7 +49,7 @@ export const LeadershipAchievements = () => {
 
         <div className="space-y-4">
           {/* Startup Bihar Card */}
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 transition-all hover:border-neutral-300 dark:border-neutral-800 dark:bg-neutral-900/40 dark:hover:border-neutral-700">
+          <div className="gradient-tile rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 transition-all hover:border-neutral-300 dark:border-neutral-800 dark:bg-neutral-900/40 dark:hover:border-neutral-700">
             <div className="flex flex-col justify-between gap-3 border-b border-neutral-200 pb-4 sm:flex-row sm:items-center dark:border-neutral-800">
               <div>
                 <div className="flex items-center gap-2">
@@ -87,7 +87,7 @@ export const LeadershipAchievements = () => {
           </div>
 
           {/* Cloud Community Leadership */}
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 dark:border-neutral-800 dark:bg-neutral-900/40">
+          <div className="gradient-tile rounded-2xl border border-neutral-200 bg-neutral-100/50 p-6 dark:border-neutral-800 dark:bg-neutral-900/40">
             <div className="flex items-center gap-2 border-b border-neutral-200 pb-4 dark:border-neutral-800">
               <Cloud className="size-5 text-blue-500" />
               <h3 className="font-semibold text-neutral-900 dark:text-white">

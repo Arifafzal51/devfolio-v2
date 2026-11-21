@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 
 import { UmamiAnalytics } from "@/components/analytics/UmamiAnalytics";
 import { CustomCursor } from "@/components/common/CustomCursor";
+import { DynamicBackgroundMesh } from "@/components/common/DynamicBackgroundMesh";
 import { Footer } from "@/components/common/Footer";
 import { Navbar } from "@/components/common/Navbar";
 import { NavigationProgress } from "@/components/common/NavigationProgress";
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col">
         <Suspense fallback={null}>
           <AppProviders>
+            <DynamicBackgroundMesh />
             <NavigationProgress />
             <Toaster richColors position="top-right" />
             <CustomCursor />
