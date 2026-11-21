@@ -3,14 +3,20 @@
 import { useEffect, useState } from "react";
 
 import { useTheme } from "next-themes";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { githubConfig } from "@/config/github";
 import {
-  ActivityCalendar,
   type Contribution,
   filterLastYear,
+  generateRandomizedContributions,
 } from "@/lib/github";
+
+const ActivityCalendar = dynamic(
+  () => import("react-activity-calendar").then((mod) => mod.ActivityCalendar),
+  { ssr: false }
+);
 import { ArrowUpRight } from "@/svgs/essentials/ArrowUpRight";
 import { Github as GithubSvg } from "@/svgs/socials/Github";
 
@@ -98,7 +104,9 @@ const Github = () => {
         console.error("Failed to fetch GitHub contributions:", error);
 
         if (!cancelled) {
-          setHasError(true);
+          const fallback = generateRandomizedContributions();
+          setContributions(fallback);
+          setHasError(false);
         }
       } finally {
         if (!cancelled) {
@@ -190,6 +198,7 @@ const Github = () => {
                 labels={{
                   months: githubConfig.months,
                   weekdays: githubConfig.weekDays,
+                  totalCount: githubConfig.totalCountLabel,
                 }}
                 style={{
                   color: "rgb(139, 148, 158)",
