@@ -19,6 +19,8 @@ export function generateMetadata(): Metadata {
 }
 
 export default function ResumePage() {
+  const resumeUrl = "/assets/resume.pdf";
+
   return (
     <Container className="mt-5 px-4 md:px-6 lg:px-0">
       <Reveal>
@@ -29,14 +31,14 @@ export default function ResumePage() {
       </Reveal>
 
       <Reveal delay={0.1}>
-        <div className="my-4 flex items-center justify-between">
-          <p className="text-sm text-neutral-500">
-            Arif Afzal — Software Developer &amp; Technical Educator
+        <div className="my-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+            Arif Afzal — Software &amp; IT Professional | Full-Stack Development • IT Support • Data &amp; Analytics
           </p>
           <a
-            href="/assets/resume.pdf"
+            href={resumeUrl}
             download="Arif-Afzal-Resume.pdf"
-            className="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-neutral-900 px-4 py-2 text-xs font-medium text-white transition-all hover:bg-neutral-800 dark:border-neutral-700 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
+            className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-neutral-300 bg-neutral-900 px-4 py-2 text-xs font-medium text-white transition-all hover:bg-neutral-800 dark:border-neutral-700 dark:bg-white dark:text-black dark:hover:bg-neutral-200"
           >
             Download Resume (PDF)
           </a>
@@ -47,9 +49,9 @@ export default function ResumePage() {
           style={{ animationDelay: "0.1s" }}
         >
           <iframe
-            src="/assets/resume.pdf"
+            src={`${resumeUrl}#view=FitH`}
             title="Arif Afzal Resume"
-            className="h-100 w-full md:min-h-200"
+            className="h-[600px] w-full md:min-h-[850px]"
             allow="autoplay"
           />
         </div>
